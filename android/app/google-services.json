@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "324076338452",
+    "project_id": "warrol",
+    "storage_bucket": "warrol.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324076338452:android:2aac5a62aac1399db49601",
+        "android_client_info": {
+          "package_name": "com.warrol"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtINOreGqkeW85lZlHWyEKy0V4v9Gd9vQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
