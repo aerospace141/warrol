@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-export default function MyBookingsScreen() {
+export default function HomeScreen() {
   return (
     <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
-      <Text>My Bookings*****</Text>
+      <Text>Customer Home Screen</Text>
     </View>
   );
 }

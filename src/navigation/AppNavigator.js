@@ -3,6 +3,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { useAuth } from '../context/AuthContext';
+import HomeScreen from '../pages/HomeScreen';
+import MyBookingsScreen from '../pages/MyBookingsScreen';
+import ProfileScreen from '../pages/ProfileScreen';
+import OwnerDashboardScreen from '../pages/OwnerDashboardScreen';
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
