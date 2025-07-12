@@ -70,6 +70,8 @@ const SignupScreen = ({ navigation }) => {
         // Navigation will be handled by the main navigator based on user role
       } else {
         Alert.alert('Error', result.error || 'Signup failed');
+        console.log('Signup result:', result);
+
       }
     } catch (error) {
       Alert.alert('Error', 'An error occurred during signup');

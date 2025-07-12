@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import { useAuth } from '../context/AuthContext';
-import HomePage from './HomePage';
+// import HomePage from './HomePage';
 
 const CustomerHome = () => {
   const { user, logout } = useAuth();
@@ -15,7 +15,7 @@ const CustomerHome = () => {
 
       <View className="space-y-4">
 
-        <HomePage />
+        {/* <HomePage /> */}
 
 
         <TouchableOpacity className="bg-blue-600 p-4 rounded-lg">
