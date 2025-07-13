@@ -9,11 +9,17 @@ import LoginScreen from './src/pages/auth/LoginScreen';
 import SignupScreen from './src/pages/auth/SignupScreen';
 
 // Role-based home screens
-import CustomerHome from './src/pages/HomePage';
+import CustomerHome from './src/pages/HomeScreen'; // Changed to HomeScreen for consistency
 import OwnerDashboard from './src/pages/OwnerDashboard';
 import AdminDashboard from './src/pages/AdminDashboard';
 
 import SearchBusesScreen from './src/pages/SearchBusesScreen'; // Import SearchBusesScreen
+import BusListScreen from './src/pages/BusListScreen';
+import BusDetailsScreen from './src/pages/BusDetailsScreen';
+import BookingConfirmationScreen from './src/pages/BookingConfirmationScreen';
+import MyBookingsScreen from './src/pages/MyBookingsScreen';
+import SeatSelectionScreen from './src/pages/SeatSelectionScreen';
+import TicketScreen from './src/pages/TicketScreen';
 
 const Stack = createStackNavigator();
 
@@ -32,7 +38,15 @@ const AppNavigator = () => {
           {user.role === 'customer' && (
             <>
             <Stack.Screen name="CustomerHome" component={CustomerHome} />
-            <Stack.Screen name="SearchBuses" component={SearchBusesScreen} /></>
+            <Stack.Screen name="SearchBuses" component={SearchBusesScreen} />
+        <Stack.Screen name="BusList" component={BusListScreen} />
+        <Stack.Screen name="BusDetails" component={BusDetailsScreen} />
+        <Stack.Screen name="SeatSelection" component={SeatSelectionScreen} />
+        <Stack.Screen name="BookingConfirmation" component={BookingConfirmationScreen} />
+        <Stack.Screen name="Ticket" component={TicketScreen} />
+
+        <Stack.Screen name="MyBookings" component={MyBookingsScreen} />
+        </>
 
           )}
           {user.role === 'busowner' && (
