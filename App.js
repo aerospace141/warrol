@@ -9,9 +9,11 @@ import LoginScreen from './src/pages/auth/LoginScreen';
 import SignupScreen from './src/pages/auth/SignupScreen';
 
 // Role-based home screens
-import CustomerHome from './src/pages/CustomerHome';
+import CustomerHome from './src/pages/HomePage';
 import OwnerDashboard from './src/pages/OwnerDashboard';
 import AdminDashboard from './src/pages/AdminDashboard';
+
+import SearchBusesScreen from './src/pages/SearchBusesScreen'; // Import SearchBusesScreen
 
 const Stack = createStackNavigator();
 
@@ -28,7 +30,10 @@ const AppNavigator = () => {
         // User is logged in, show role-based screens
         <>
           {user.role === 'customer' && (
+            <>
             <Stack.Screen name="CustomerHome" component={CustomerHome} />
+            <Stack.Screen name="SearchBuses" component={SearchBusesScreen} /></>
+
           )}
           {user.role === 'busowner' && (
             <Stack.Screen name="OwnerDashboard" component={OwnerDashboard} />
